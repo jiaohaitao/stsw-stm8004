@@ -1,0 +1,7 @@
+..\..\src\i2c_slave_interrupt.c
+..\..\src\main.c
+stm8_interrupt_vector.c
+..\..\inc\i2c_slave_interrupt.h
+..\..\inc\stm8s.h
+..\..\inc\stm8s_type.h
+c:\program files (x86)\cosmic\cxstm8_32k\hstm8\mods0.h

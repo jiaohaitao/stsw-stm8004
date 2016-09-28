@@ -41,9 +41,14 @@ void main(void)
 	CLK->CKDIVR = 0;                // sys clock /1
 
 	/* Init GPIO for I2C use */
+	/*
 	GPIOE->CR1 |= 0x06;
 	GPIOE->DDR &= ~0x06;
 	GPIOE->CR2 &= ~0x06;
+	*/
+	GPIOB->DDR&= 0xcf;
+	GPIOB->CR1&= 0xcf;
+	GPIOB->CR2&= 0xcf;
 
 	/* Initialise I2C for communication */
 	Init_I2C();
